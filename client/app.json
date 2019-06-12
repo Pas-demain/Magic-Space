@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/days/days",
+    "pages/details/details",
+    "pages/notes/notes",
+    "pages/self/self",
+    "pages/mvdetail/mvdetail",
+    "pages/musicdetail/musicdetail"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "text": "日推",
+        "pagePath": "pages/days/days",
+        "iconPath": "img/日推.png",
+        "selectedIconPath": "img/日推-h.png"
+      },
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home",
+        "iconPath": "img/首页.png",
+        "selectedIconPath": "img/首页-h.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/self/self",
+        "iconPath": "img/其他.png",
+        "selectedIconPath": "img/其他-h.png"
+      }
+    ],
+    "color":"black",
+    "selectedColor": "#FFCC99",
+    "backgroundColor": "rgba(200, 200, 200，0.8)"
+  },
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#FF9966",
+    "navigationBarTitleText": "Magic Space",
+    "navigationBarTextStyle": "white"
+  }
+}

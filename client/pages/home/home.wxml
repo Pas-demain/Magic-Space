@@ -1,0 +1,51 @@
+<view class='all'>
+<view class='navbar'>
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ' '}}" wx:key="unique" bindtap='navbarTap'>{{item}}</text>
+</view>
+
+<!-- 日报页面start -->
+<view hidden='{{currentTab!==0}}' class='main-one main-all'>
+ <swiper class='one-swiper' indicator-dots='{{true}}' autoplay="true" duration="300" indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+  <swiper-item wx:for="{{oneSwiperList}}">
+  <image src='{{item.image}}' bindtap='newNotes'  data-note-id='{{item.id}}'></image>
+  <text class='s-title'>{{item.title}}</text>
+  </swiper-item>
+ </swiper>
+  <view class='one-all' wx:for="{{oneList}}" wx:for-index="id" bindtap='newNotes' data-note-id='{{item.id}}'>
+    <view class='one-left fl'>
+      <text class='one-title'>{{item.title}}</text>
+      <text class='one-word'></text>
+      <text class='one-from'></text>
+    </view>
+    <image class='one-right fr' src='{{item.images}}'></image>
+  </view>
+  <button class="load-button"  loading="{{loading}}" plain="{{plain}}" bindtap="loadMore">更多...</button>
+</view>
+<!-- 日报页面end -->
+
+
+<!--视频start-->
+<view hidden='{{currentTab!==1}}' class='main-two main-all'>
+  <view class='two-all' wx:for="{{twoList}}" bindtap='mvdetail' wx:for-index="id" data-mv-id='{{item.id}}'>
+    <image src='{{item.pic}}'></image>
+    <view class='two-top'>
+      <text class='two-title fl'>{{item.name}}</text>
+      <text class='two-from fr'>--{{item.singer}}</text>
+    </view>
+  </view>
+  <button class="load-button"  loading="{{loading}}" plain="{{plain}}" bindtap="loadMv">更多...</button>
+</view>
+<!--视频end-->
+
+
+<view hidden='{{currentTab!==2}}' class='main-three main-all'>
+  <text class='mlist-title'>我的歌单({{info}})</text>
+  <view class='three-all' wx:for="{{threeList}}" bindtap='musicDetail' data-music-id='{{item.id}}'>
+    <image src='{{item.coverImgUrl}}' class='fl'></image>
+    <view class='fr mlist-info'>
+      <text class='mlist-name'>{{item.name}}</text>
+      <text class='mlist-count'>{{item.trackCount}}首</text>
+    </view>
+  </view>
+</view>
+</view>

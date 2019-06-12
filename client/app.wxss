@@ -1,0 +1,37 @@
+/**app.wxss**/
+page{
+  background: url("http://m.qpic.cn/psb?/V13gNrIu4DpEnq/uhcla*jpdGK8azfTTTFSJe1kp2koBSNUeGjjR*uu3Bc!/b/dFMBAAAAAAAA&bo=OASABwAAAAARF5s!&rf=viewer_4");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 楷体;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.main{
+  background:snow;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.all{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+

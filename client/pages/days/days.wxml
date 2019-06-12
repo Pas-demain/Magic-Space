@@ -1,0 +1,23 @@
+<view class="all">
+<swiper class='days-swiper' indicator-dots='{{true}}' current='{{dayWordList.length-1}}' indicator-color="{{beforeColor}}" indicator-active-color="{{afterColor}}">
+<swiper-item class="days" wx:for='{{dayWordList}}'>
+<view class="in" bindtap='f1' data-w-from='{{item.wordFrom}}' data-day-id='{{item.id}}' data-w-name='{{item.wordName}}' data-i-path='{{item.imagePath}}' data-m-src='{{item.src}}'>
+    <image class="img" src='{{item.imagePath}}'></image>
+    <view class='like'>
+      <image class='com-img' src='/img/comment.png'></image><text class='fl'>评论</text>
+      <image class='like-img' src='/img/ding.png' catchtap='f0' data-index='{{index}}'></image><text class='fr'>{{item.zana}}</text>
+    </view>
+    <view class='word'>
+        <text class='main-word'>{{item.dayWord}}</text>
+        <text class='main-come'>--{{item.wordName}}({{item.wordFrom}})</text>
+    </view>
+    <view>
+      <audio hidden="true" src="{{src}}" controls loop></audio>
+    </view>
+</view>
+</swiper-item>
+</swiper>
+</view>
+<!-- 没有完善的：
+点赞只能点一下
+评论 -->

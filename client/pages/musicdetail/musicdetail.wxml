@@ -1,0 +1,15 @@
+<!--pages/musicdetail/musicdetail.wxml-->
+<view class='mlist-info'>
+  <image src='{{mlist.coverImgUrl}}' class='mlist-img fl'></image>
+  <view class='mlist-info-right fr'>
+    <text class='mlist-info-name'>{{mlist.name}}</text>
+    <view class='mlist-info-creator'>
+      <image src='{{mlist.creator.avatarUrl}}' class='creator-img fl'></image>
+      <text class='creator-name fl'>{{mlist.creator.nickname}}</text>
+    </view>
+  </view>
+</view>
+
+<view class='musiclist' wx:for="{{musicList}}" data-m-id='{{item.id}}' bindtap='play'>
+  <audio src='{{item.url}}' poster='{{item.album.picUrl}}' name='{{item.name}}' author='{{item.artists["0"].name}}' controls loop class='music' action="{{action}}"></audio>
+</view>

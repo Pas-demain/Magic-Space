@@ -1,0 +1,47 @@
+<!--pages/mvdetail/mvdetail.wxml-->
+<view class='mv-main'>
+  <video class='m-video' src='{{mv.url}}'></video>
+  <text class='mv-name' >{{mv.name}}</text>
+  <view class='mv-main-one'>
+    <text class='mv-playnum fl'>{{mv.playCount}}次观看</text>
+    <text class='mv-time fr'>{{mv.publishTime}}发布</text>
+  </view>
+  <view class='mv-main-two'>
+    <text class='mv-info-title'>MV介绍</text>
+    <text class='mv-info'>{{mv.desc}}</text>
+  </view>
+
+ <!-- //mv热门评论 -->
+<text class='mv-com-title'>热门评论</text>
+  <view class='mv-com' wx:for="{{hotComList}}">
+    <image class='fl post' src='{{item.user.avatarUrl}}'></image>
+    <view class='mv-in fr'>
+      <view class='mv-info-main'>
+        <text class='fl post-name'>{{item.user.nickname}}</text>
+        <image src='/img/ding.png' class='fr zan'></image><text class='zan-num'>{{item.likedCount}}</text>
+      </view>
+      <text class='mv-com-main'>{{item.content}}</text>
+    </view>
+  </view>
+
+  <!-- //mv全部评论 -->
+  <text class='mv-com-title'>全部评论 ({{comTotal}})</text>
+  <view class='mv-com' wx:for="{{mvComList}}">
+    <image class='fl post' src='{{item.user.avatarUrl}}'></image>
+    <view class='mv-in fr'>
+      <view class='mv-info-main'>
+        <text class='fl post-name'>{{item.user.nickname}}</text>
+        <image src='/img/ding.png' class='fr zan'></image><text class='zan-num'>{{item.likedCount}}</text>
+      </view>
+      <text class='mv-com-main'>{{item.content}}</text>
+      <view class='com-rep'>
+        <text class='com-rep-name'>{{item.beReplied["0"].user.nickname}}</text>
+        <text>{{item.beReplied["0"].content}}</text>
+      </view>
+    </view>
+  </view>
+  <button class="load-button"  loading="{{loading}}" plain="{{plain}}" bindtap="loadMvCom" data-com-id='{{mv.id}}'>更多评论...</button>
+
+</view>
+
+

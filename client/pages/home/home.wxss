@@ -1,0 +1,166 @@
+page{ 
+ display: flex; 
+ flex-direction: column; 
+ height: 100%; 
+} 
+/*精选页面*/
+.navbar{   
+  width: 100%;
+  height: 40px;
+  display: flex;  
+  position: fixed;/*固定导航栏*/
+  background: rgba(255, 255, 255, 0.3);
+  /* filter: blur(2px); */
+  border-bottom: 1px solid #FF9966;
+  color: white;
+} 
+.navbar .item{  
+  width: 33.3%;
+  position: relative;   
+  text-align: center;  
+  line-height: 40px;  
+  font-size:16px;
+}  
+/* 顶部导航字体颜色 */
+.navbar .item.active{  
+  color: #FF9966;  
+}  
+/* 顶部指示条属性 */
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 6rpx;  
+  background: #FF9966;  
+}
+.main-all{
+  width: 100%;
+  margin-top: 40px;
+} 
+.main-one{
+  background: rgba(233, 232, 232, 0.4);
+}
+.main-one .one-swiper{
+  display: flex;
+  height: 180px;
+  width: 94%;
+  padding: 10px 0px 0px 11px;
+}
+.main-one .one-swiper swiper-item{
+  display: flex;
+}
+.main-one .one-swiper swiper-item image{
+  width: 100%;
+  height: 180px;
+  position: relative;
+  border-radius:5px; 
+}
+.main-one .one-swiper swiper-item .s-title{
+  display: inline-block;
+  width: 80%;
+  position: absolute;
+  bottom: 20px;
+  left: 14px;
+  font-size: 16px;
+  color:white;
+}
+.one-all{
+  height: 100px;
+  background: rgba(253, 253, 253, 0.7);
+  margin-top: 10px;
+  padding: 18px;
+  border-radius: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.main-one .one-left{
+  width: 180px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: gray;
+}
+.main-one .one-title{
+  font-size: 16px;
+  color: black;
+}
+.main-one .one-word{
+  margin-top: 14px;
+  margin-bottom: 14px;
+  display: inline-block;
+}
+.main-one .one-right{
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.load-button{
+  background:rgba(253, 253, 253, 0); 
+  font-family: 宋体;
+  font-size: 16px;
+  font-weight: 800;
+  color: #FF9966;
+}
+
+.main-two{
+  background: rgba(233, 232, 232, 0.4);
+}
+.two-all{
+  background: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  background: rgba(253, 253, 253, 0.7);
+  border-radius: 5px;
+  display:inline-block;
+  width:92%;
+}
+.two-all image{
+  width: 100%;
+  height: 220px;
+  border-radius:5px; 
+}
+.two-all .two-top{
+  width: 100%;
+  font-size: 16px;
+  color: black;
+  margin-top: 10px;
+}
+.two-all .two-top .two-from{
+  color: gray;
+}
+.mlist-title{
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+}
+.three-all{
+  width: 91%;
+  height: 60px;
+  background: rgba(233, 232, 232, 0.4);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding:7px;
+  margin-left:10px;
+}
+.three-all image{
+  width: 60px;
+  height: 60px;
+}
+.mlist-info .mlist-name{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  display:inline-block;
+  color: white
+}
+.mlist-info{
+  width: 80%;
+}
+.mlist-info .mlist-count{
+  color: rgb(214, 214, 214);
+  font-size: 14px;
+}

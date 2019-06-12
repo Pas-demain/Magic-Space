@@ -1,0 +1,47 @@
+.in .img{
+  padding:14px 0px 0 18px; 
+  width: 90%;
+  height: 240px;
+  border-radius: 10px;
+}
+.like{
+  height: 30px;
+  margin: 16px;
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+}
+.like image{
+  width:20px;
+  height:20px;
+}
+.like .com-img{
+  float: left;
+}
+.like .like-img{
+  float: right;
+}
+.word{
+  width:280px;
+  margin: 0px auto;
+}
+.main-word{
+  font-size: 16px;
+  color:rgb(255, 255, 255);
+}
+.main-come{
+  margin-top: 30px;
+  float: right;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+}
+.days-swiper{
+  display: flex;
+  height: 100vh;
+}
+.days{
+  display: flex;
+}
+.in{
+  width: 100%;
+}

@@ -1,0 +1,54 @@
+/* pages/self/self.wxss */
+.self-all{
+  width: 95%;
+  padding: 10px;
+  font-size: 16px;
+}
+.login-button{
+  background: rgba(255, 255, 255, 0.8);
+}
+.self-info{
+  width: 100%;
+  height: 110px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+   padding-top:20px;
+}
+.self-info .self-photo{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 148px;
+}
+.self-info .self-name{
+  font-size: 24px;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block
+}
+.self-main{
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+.self-main .self-every{
+  width: 94%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255, 255, 255,0.5);
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.self-main .self-every image{
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-top: 8px;
+}

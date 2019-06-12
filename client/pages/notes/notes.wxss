@@ -1,0 +1,122 @@
+/* pages/notes/notes.wxss */
+.note-main{
+  padding: 14px;
+  color: white;
+}
+.note-title{
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.note-image{
+  width: 96%;
+  height: 220px;
+  padding-left:7px;
+  padding-right: 7px; 
+}
+.note-image image{
+  width: 100%;
+  border-radius: 6px;
+}
+.note-source{
+  position: absolute;
+  right: 30px;
+  font-size: 12px;
+  color: white;
+}
+.note-body{
+  width: 100%;
+  margin-top: 30px;
+  display: inline-block;
+  font-size: 14px;
+}
+.note-bottom{
+  padding: 12px;
+  font-size: 14px;
+  color: white
+}
+.note-bottom-main{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  padding-top: 8px;
+  border-top: 2px solid #FF9966;
+  position: relative;
+}
+.note-bottom image{
+  width: 20px;
+  height: 20px;
+}
+.note-bottom .note-comment{
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.note-bottom .note-like{
+  position: absolute;
+  right: 12px;
+  top:6px;
+}
+.note-bottom .text-com{
+  position: absolute;
+  left: 36px;
+}
+.note-bottom .text-like{
+  position: absolute;
+  right: 36px;
+}
+.main-com{
+  width: 100%;
+  padding-left: 14px;
+  padding-top: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.info{
+ width: 82%;
+ padding-right: 26px;
+ padding-bottom: 12px;
+ border-bottom: 1px solid gainsboro;
+}
+.info-main{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+}
+.main-com .post{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.info-main .post-name{
+  font-size: 16px;
+  padding-left: 10px;
+  color: rgb(9, 179, 247);
+}
+.info-main .zan{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 8px;
+}
+.info-main .zan-num{
+  font-size: 16px;
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  right:46px;
+  color: white;
+}
+.com-main{
+  font-size: 14px;
+  color:white;
+  padding:0px 14px 0px 14px;
+  display:inline-block;
+}

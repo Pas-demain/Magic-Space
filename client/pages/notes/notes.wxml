@@ -1,0 +1,31 @@
+<!--pages/notes/notes.wxml-->
+<view class='all'>
+<view class='note-main'>
+  <text class='note-title'>{{note.title}}</text>
+  <view class='note-image'>
+  <image src='{{note.image}}'></image>
+  </view>
+  <text class='note-source'>图片来源：{{note.image_source}}</text>
+  <text class='note-body'>{{note.body}}</text>
+</view>
+
+<view class="note-bottom">
+  <view class='note-bottom-main'> 
+    <image class='note-comment' src='/img/comment.png'></image>
+    <text class='text-com' bindtap='comClick' data-com-id='{{note.id}}'>{{com.comments}}</text>
+    <image class='note-like' src='/img/ding.png'></image><text class='text-like'>{{com.popularity}}</text>
+  </view>
+</view>
+
+<view class='main-com' wx:for="{{comList}}">
+  <image class='fl post' src='{{item.avatar}}'></image>
+  <view class='info fr'>
+    <view class='info-main'>
+      <text class='fl post-name'>{{item.author}}</text>
+      <image src='/img/ding.png' class='fr zan'></image><text class='zan-num'>{{item.likes}}</text>
+    </view>
+    <text class='com-main'>{{item.content}}</text>
+  </view>
+</view>
+</view>
+

@@ -1,0 +1,32 @@
+<!--pages/details/details.wxml-->
+<view class='all'>
+  <view class='lyric-main' bindtap='lyricMain'>
+    <text class='songname'>{{minfo.name}}</text>
+    <text class='artist'>演唱者：{{martist}}</text>
+    <view class='music'>
+      <audio src='{{msrc}}' poster='{{minfo.al.picUrl}}' name='{{minfo.name}}' author='{{martist}}' controls loop></audio>
+    </view>
+    <image class='cover' src='{{minfo.al.picUrl}}'></image><!-- //封面 -->
+    <text class='lyric'>歌词：{{word.lrc.lyric}}</text>
+  </view>
+
+  <view>
+    <view class='com' bindtap='comSubmit'>评论</view>
+    <view class='rela' hidden="{{!releaseFocus}}">
+        <textarea class="text"
+          placeholder-class="input_null" 
+          fixed="true" 
+          maxlength="-1" 
+          show-confirm-bar="false" 
+          cursor-spacing="15" 
+          auto-height="true" 
+          focus="{{releaseFocus}}"
+          placeholder="评论 {{minfo.name}}" bindinput='change' value='{{content}}'></textarea>
+          <view class='submit' bindtap='sure'>发送</view>
+    </view>
+  </view>
+
+  <view>
+   <text>{{cgv}}</text>
+  </view>
+</view>

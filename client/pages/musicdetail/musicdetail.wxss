@@ -1,0 +1,50 @@
+/* pages/musicdetail/musicdetail.wxss */
+.mlist-info{
+  width:88%;
+  height:100px;
+  padding:16px;
+  background:rgba(255, 255, 255, 0.4);
+  margin:7px;
+  border-radius:5px;
+}
+.mlist-img{
+  width: 100px;
+  height: 100px;
+}
+.mlist-info-right{
+  width: 67%;
+}
+.mlist-info-name{
+  font-size: 18px;
+  display:inline-block;
+  height:30px;
+  line-height:30px;
+}
+.mlist-info-creator{
+  margin-top: 2px;
+}
+.creator-img{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+.creator-name{
+  font-size: 12px;
+  display:inline-block;
+  height:40px;
+  line-height:40px;
+  margin-left:10px;
+}
+.musiclist{
+  width:97%;
+  padding:6px;
+  background:rgba(255, 255, 255, 0.2);
+}
+.music{
+  width:96%;
+  display:flex;
+  flex-direction:column;
+  padding:7px;
+  background:rgba(255, 255, 255, 0.2);
+  border-radius:5px;
+}

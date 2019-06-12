@@ -1,0 +1,30 @@
+<!--pages/self/self.wxml-->
+<view class="self-all">
+  <button class='login-button' wx:if="{{!hasUserInfo && canIUse}}" open-type='getUserInfo' bindgetuserinfo='getUserInfo'>微信登录</button>
+  <view class='self-info' wx:else>
+    <image src='{{userInfo.avatarUrl}}' class="self-photo" bindtap='bindViewTap' mode='cover'></image>
+    <text class='self-name'>{{userInfo.nickName}}</text>
+  </view>
+  <view class='self-main'>
+    <view class='self-every'>
+      <image src='/img/我.png'></image>
+      <text>日志</text>
+      <text class='fr'>></text>
+    </view>
+    <view class='self-every'>
+      <image src='/img/我.png'></image>
+      <text>我的收藏</text>
+      <text class='fr'>></text>
+    </view>
+    <view class='self-every'>
+      <image src='/img/我.png'></image>
+      <text>我的赞</text> 
+      <text class='fr'>></text>
+    </view> 
+     <view class='self-every'>
+      <image src='/img/我.png'></image>
+      <text>更换账号</text> 
+      <text class='fr'>></text>
+    </view> 
+  </view>
+</view>
