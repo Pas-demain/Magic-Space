@@ -29,7 +29,7 @@
         "selectedIconPath": "img/其他-h.png"
       }
     ],
-    "color":"black",
+    "color": "black",
     "selectedColor": "#FFCC99",
     "backgroundColor": "rgba(200, 200, 200，0.8)"
   },
@@ -38,5 +38,6 @@
     "navigationBarBackgroundColor": "#FF9966",
     "navigationBarTitleText": "Magic Space",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
